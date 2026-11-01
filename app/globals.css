@@ -70,3 +70,12 @@
 @utility section-spacing {
   padding-block: var(--section-spacing);
 }
+
+@utility focus-ring {
+  &:focus-visible {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-color: var(--color-primary);
+  }
+}

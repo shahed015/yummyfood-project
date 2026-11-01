@@ -1,5 +1,6 @@
 import { Newsreader, Outfit } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/ui/Navbar";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${newsreader.variable} ${outfit.variable}`}>
       <body className="flex min-h-full flex-col bg-cream font-sans text-black">
+        <Navbar />
         <div className="flex-1">{children}</div>
       </body>
     </html>
