@@ -68,6 +68,8 @@ export default function Banner() {
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="-z-20 object-cover transition-[filter,scale] duration-500 ease-out group-hover:scale-105 group-hover:blur-sm motion-reduce:transition-none [@media(hover:none)]:scale-105 [@media(hover:none)]:blur-sm"
+            placeholder="blur"
+            blurDataURL="..."
           />
 
           <div

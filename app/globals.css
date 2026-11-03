@@ -141,3 +141,46 @@
   --btn-hover-text: var(--color-secondary);
   --btn-focus: #fff;
 }
+
+/* Hover e primary color (link er jonno). Focus er jonno `focus-ring` sathe dao */
+@utility link-hover {
+  transition: color var(--transition-base);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Footer column heading */
+@utility footer-heading {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+
+/* Footer contact/hours er icon */
+@utility footer-icon {
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+/* Dark background er round social button */
+@utility social-btn {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  color: #fff;
+  transition:
+    color var(--transition-base),
+    border-color var(--transition-base);
+
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}

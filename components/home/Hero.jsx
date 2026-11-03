@@ -28,6 +28,8 @@ export default function Hero() {
               width={24}
               height={24}
               className="size-6 rounded-full border border-primary object-cover"
+              placeholder="blur"
+              blurDataURL="..."
             />
             Taste of world class food
           </Reveal>
@@ -48,6 +50,8 @@ export default function Hero() {
                     width={200}
                     height={80}
                     className="h-[0.8em] w-[1.8em] rounded-full border-[3px] border-primary object-cover"
+                    placeholder="blur"
+                    blurDataURL="..."
                   />
                 </ImageReveal>
                 <span>Experience</span>
@@ -58,6 +62,8 @@ export default function Hero() {
                     width={100}
                     height={100}
                     className="size-[1em] rounded-full border-[3px] border-primary object-cover"
+                    placeholder="blur"
+                    blurDataURL="..."
                   />
                 </ImageReveal>
               </span>
@@ -99,6 +105,8 @@ export default function Hero() {
                       width={44}
                       height={44}
                       className="size-11 rounded-full border-2 border-surface object-cover"
+                      placeholder="blur"
+                      blurDataURL="..."
                     />
                   </Reveal>
                 ))}
@@ -123,6 +131,8 @@ export default function Hero() {
                 width={56}
                 height={56}
                 className="size-10 rounded-full border-2 border-primary object-cover md:size-14"
+                placeholder="blur"
+                blurDataURL="..."
               />
             </h2>
             <p className="max-w-md text-sm leading-relaxed text-text-muted">
@@ -144,6 +154,8 @@ export default function Hero() {
               width={800}
               height={800}
               className="absolute left-[6%] top-[6%] size-[88%] rounded-full object-cover"
+              placeholder="blur"
+              blurDataURL="..."
             />
             <Reveal
               inView
