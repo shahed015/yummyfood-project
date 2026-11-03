@@ -79,3 +79,65 @@
     outline-color: var(--color-primary);
   }
 }
+
+/* button */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-button);
+  background-color: var(--btn-bg, var(--color-secondary));
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--btn-text, #fff);
+  box-shadow: var(--shadow-layered);
+  transition:
+    color var(--transition-base),
+    background-color var(--transition-base),
+    box-shadow var(--transition-base);
+
+  &:hover {
+    background-color: var(--btn-hover-bg, var(--color-primary));
+    color: var(--btn-hover-text, var(--color-secondary));
+    box-shadow: var(--shadow-card);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--btn-focus, var(--color-primary));
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+/* Variants: jusr variable override */
+@utility btn-default {
+  --btn-bg: var(--color-secondary);
+  --btn-text: #fff;
+  --btn-hover-bg: var(--color-primary);
+  --btn-hover-text: var(--color-secondary);
+  --btn-focus: var(--color-primary);
+}
+
+@utility btn-on-primary {
+  --btn-bg: var(--color-secondary);
+  --btn-text: #fff;
+  --btn-hover-bg: var(--color-text-muted);
+  --btn-hover-text: #fff;
+  --btn-focus: var(--color-secondary);
+}
+
+/* For dark section : white bg, black text, hover ager moto */
+@utility btn-on-dark {
+  --btn-bg: #fff;
+  --btn-text: var(--color-secondary);
+  --btn-hover-bg: var(--color-primary);
+  --btn-hover-text: var(--color-secondary);
+  --btn-focus: #fff;
+}
