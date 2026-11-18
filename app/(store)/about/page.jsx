@@ -1,5 +1,6 @@
 import AboutHero from "@/components/about/AboutHero";
 import HeroGallery from "@/components/about/HeroGallery";
+import HowItWorks from "@/components/about/HowItWorks";
 import OurStory from "@/components/about/OurStory";
 import Banner from "@/components/home/Banner";
 import Newsletter from "@/components/home/Newsletter";
@@ -18,6 +19,7 @@ export default function AboutPage() {
         <HeroGallery />
         <OurStory />
         <Banner />
+        <HowItWorks />
         <Newsletter />
       </main>
     </>
