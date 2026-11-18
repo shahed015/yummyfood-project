@@ -1,5 +1,25 @@
-function BlogPage() {
-  return <div>BlogPage</div>;
-}
+import PageHero from "@/components/ui/PageHero.jsx";
+import Newsletter from "@/components/home/Newsletter";
+import { POSTS } from "@/data/posts";
 
-export default BlogPage;
+export const metadata = {
+  title: "Blog | YummyFood",
+  description: "Food tips, recipes, and ordering guides from YummyFood.",
+};
+
+export default function BlogPage() {
+  const [featured, ...rest] = POSTS;
+
+  return (
+    <>
+      <main>
+        <PageHero
+          title="Our Blog"
+          description="Tips, ideas, and stories about good food."
+        />
+
+        <Newsletter />
+      </main>
+    </>
+  );
+}
